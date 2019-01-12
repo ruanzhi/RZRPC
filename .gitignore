@@ -1,23 +1,36 @@
-# Compiled class file
-*.class
+#忽略.iml结尾文件
+*.iml
+/.idea
+/rz-remoting/.idea/
+/rz-remoting/target/
+/rz-remoting/*.iml
 
-# Log file
-*.log
+/rzrpc-client/.idea/
+/rzrpc-client/target/
+/rzrpc-client/*.iml
 
-# BlueJ files
-*.ctxt
+/rzrpc-comm/target/
+/rzrpc-comm/.idea/
+/rzrpc-comm/*.iml
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+/rzrpc-core/target/
+/rzrpc-core/.idea/
+/rzrpc-core/*.iml
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+/rzrpc-facade/target/
+/rzrpc-facade/.idea/
+/rzrpc-facade/*.iml
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+/rzrpc-server/target/
+/rzrpc-server/.idea/
+/rzrpc-server/*.iml
+
+/service-access-center/target/
+/service-access-center/.idea/
+/service-access-center/*.iml
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:RzServer="http://www.rz-remoting.com/schema/rz-service"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.rz-remoting.com/schema/rz-service http://www.rz-remoting.com/schema/rz-service.xsd">
+
+    <!-- 发布远程服务 -->
+    <bean id="helloService" class="com.rz.rpc.test.HelloServiceImpl"/>
+    <RzServer:service id="helloServiceRegister"
+                      interface="com.rz.rpc.test.HelloService"
+                      ref="helloService"
+                      groupName="default"
+                      weight="2"
+                      appKey="rz"
+                      workerThreads="100"
+                      serverPort="8081"
+                      timeout="600"/>
+</beans>

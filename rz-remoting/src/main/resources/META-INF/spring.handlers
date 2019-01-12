@@ -1,0 +1,2 @@
+http\://www.rz-remoting.com/schema/rz-service=com.rz.rpc.framework.spring.RemoteServiceNamespaceHandler
+http\://www.rz-remoting.com/schema/rz-reference=com.rz.rpc.framework.spring.RemoteReferenceNamespaceHandler

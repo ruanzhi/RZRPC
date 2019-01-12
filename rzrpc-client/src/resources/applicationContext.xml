@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    <!--ILCRPCProvider的bean 进行配置后 自动发布服务-->
+    <bean id="rzrpcConsumer" class="com.rz.rpc.consumer.service.impl.RZRPCConsumerImpl">
+        <property name="interfaceName" value="com.rz.rpc.facade.CaculatorService"></property>
+        <property name="version" value="0.1"></property>
+    </bean>
+    <!--动态代理方式实现远程调用-->
+    <bean id="caculatorService" class="com.rz.rpc.consumer.service.impl.RZRPCConsumerImpl1">
+        <property name="interfaceName" value="com.rz.rpc.facade.CaculatorService"></property>
+        <property name="version" value="0.1"></property>
+    </bean>
+</beans>
